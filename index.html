@@ -5,7 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
+    <style type="text/css">
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
 
+        #map {
+            height: 100%;
+        }
+    </style>
 </head>
 
 <body>
@@ -46,15 +57,16 @@
         <br>
         <main class="mdl-layout__content">
             <div class="page-content">
-                <div id="map">Stuff</div>
+                <div id="map"></div>
             </div>
         </main>
 
 
 
-        <script src="./mapInit.js"></script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcH2xiChNZKRGm4Ut7w-tfcRhfe5pr5BA"></script>
 
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcH2xiChNZKRGm4Ut7w-tfcRhfe5pr5BA&callback=initMap">
+    </script>
+        <script src="./mapInit.js"></script>
 
 </body>
 
